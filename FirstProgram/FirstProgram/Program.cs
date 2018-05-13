@@ -13,6 +13,9 @@ namespace FirstProgram
             CircleArea circleArea = new CircleArea(Math.PI);
             ForCounter forCounter = new ForCounter();
 
+            // A demonstration of passing by reference. circleArea is sent to the factory, where its radius is changed. Now coming out of the factory, this object keeps the changed value.
+            CircleAreaFactory circle = new CircleAreaFactory(circleArea, 12);
+            circleArea.ComputeArea();
             Console.ReadKey();
         }
     }
@@ -46,15 +49,16 @@ namespace FirstProgram
 
     public class CircleArea
     {
+        public double radius;
         public  CircleArea(double radius)
         {
-            Console.WriteLine("Area is " + ComputeArea(radius));
+            this.radius = radius;
+            ComputeArea();
         }
 
-        decimal ComputeArea(double radius)
+        public void ComputeArea()
         {
-            return ((decimal)(Math.Pow(radius,2) * Math.PI));
-            
+            Console.WriteLine("Area is " + (decimal)(Math.Pow(radius, 2) * Math.PI) + " for radius " + radius);
         }
     }
 
@@ -70,6 +74,16 @@ namespace FirstProgram
                 }
             }
         }
+    }
+
+    public class CircleAreaFactory  // A factory class
+    {
+        public CircleAreaFactory(CircleArea circleArea, double radius)
+        {
+            circleArea.radius = radius;
+            circleArea.ComputeArea();
+        }
+
     }
 }
 
