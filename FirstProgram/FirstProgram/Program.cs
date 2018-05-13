@@ -16,6 +16,7 @@ namespace FirstProgram
             // A demonstration of passing by reference. circleArea is sent to the factory, where its radius is changed. Now coming out of the factory, this object keeps the changed value.
             CircleAreaFactory circle = new CircleAreaFactory(circleArea, 12);
             circleArea.ComputeArea();
+
             Console.ReadKey();
         }
     }
