@@ -6,7 +6,9 @@ namespace StringTests
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            StringDefinition stringDefinition = new StringDefinition();
+
+            Console.ReadKey();
         }
     }
 }
