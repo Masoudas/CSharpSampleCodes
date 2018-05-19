@@ -74,6 +74,17 @@ namespace AdvancedClassTopics
             Console.WriteLine(unaryBinary.x + " " + unaryBinary.y + " " + unaryBinary.z);
 
 
+            // Type conversion. 
+            // This is explicit type conversion, where we explicitly perform casting to convert types.
+            ExplicitTypeConversion typeConversion = new ExplicitTypeConversion(1, 2, 3, 4);
+            unaryBinary = (UnaryBinaryOperatorOverloading)typeConversion;
+            Console.WriteLine(unaryBinary.x + " " + unaryBinary.y + " " + unaryBinary.z);
+
+            // This is implicit type conversion, where type conversion happens without casting (which I don't think is a good idea).
+            ImplicitTypeConversion implicitTypeConversion = new ImplicitTypeConversion(5, 6, 7, 8);
+            unaryBinary = implicitTypeConversion;
+            Console.WriteLine(unaryBinary.x + " " + unaryBinary.y + " " + unaryBinary.z);
+
             Console.ReadLine();
         }
     }
