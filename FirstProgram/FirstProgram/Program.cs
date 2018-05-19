@@ -17,6 +17,12 @@ namespace FirstProgram
             CircleAreaFactory circle = new CircleAreaFactory(circleArea, 12);
             circleArea.ComputeArea();
 
+            if (!false)
+                Console.WriteLine("Don't forget that the logical not is exclaimation mark!");
+
+            byte andedvar = (~0x00) & (0x0F) | (0x08);   // So don't forget that this is the bitwise and
+            Console.WriteLine(andedvar);
+
             Console.ReadKey();
         }
     }
