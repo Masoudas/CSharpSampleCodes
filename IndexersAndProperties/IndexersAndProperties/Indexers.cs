@@ -112,25 +112,5 @@ namespace IndexersAndProperties
     }
 
 
-    class PropertyClass
-    {
-        /* Most important point: a property is like a method. Hence, it does not define a storage space in the memory. Hence, I need to define a (private)
-           field in the class. Otherwise, the property would be doing some action and allocates no space in the memory! The only exception is of course is the
-           auto implemented properties! */
-        int field;  // This is the private field that is going to be managed by properties.
-                    // The property Myprop makes sure that it would always be positive.
-
-        public int myProp
-        {
-            get { return (myProp); }
-            set
-            {
-                if (value > 0)
-                    field = value;
-                else
-                    field = 0;
-            }
-            
-        }
-    }
+   
 }

@@ -29,9 +29,10 @@ namespace IndexersAndProperties
             for (int i = 0; i < indexerWithNo.Length; i++)
             {
                 indexerWithNo[i] = new IndexerWithNoArray();
-                IndexerWithNoArray indexerWithNo1 = indexerWithNo[i];
-                Console.WriteLine(indexerWithNo1[i]);
+                Console.WriteLine(indexerWithNo[i][i]); // This is actually how we call the indexer from within an array.
             }
+            
+            
 
             // Third, creating a session from a number of trials.
             Trial[] session = new Trial[5];
