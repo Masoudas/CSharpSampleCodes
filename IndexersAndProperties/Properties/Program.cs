@@ -9,7 +9,6 @@ namespace Properties
             // First example of properties
             PropertyClass propertyClass = new PropertyClass(10);
             Console.WriteLine(propertyClass.myProp);    // Accessing the property.
-            
 
             Console.ReadKey();
         }

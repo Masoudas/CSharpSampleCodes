@@ -6,9 +6,7 @@ namespace IndexersAndProperties
 {
     class Indexers
     {
-        /* Indexers provide the mechanism by which an object can be indexed like an array */
-        /* Here's the point: Suppose you want to create an array of a particular object, like Obj. So long as you have not defined indexers,
-         * you cannot say Obj[] obj = new Obj[5]. The part on the right would result in an error. This is the reason why we need indexers.
+        /* Indexers provide the mechanism by which an object can be indexed like an array 
            Clearly, we cannot have more than one indexer for a class*/
 
         double[] array;    // This array is defined private!

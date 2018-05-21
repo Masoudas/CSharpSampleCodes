@@ -8,7 +8,6 @@ namespace FirstProgram
         {
             Console.WriteLine("C# is good, but I am confused!");
             SecondExample secondExample = new SecondExample();
-            
 
             CircleArea circleArea = new CircleArea(Math.PI);
             ForCounter forCounter = new ForCounter();

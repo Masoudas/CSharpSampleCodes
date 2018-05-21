@@ -13,8 +13,8 @@ namespace IndexersAndProperties
             Indexers indexers2 = new Indexers(6);
             Console.WriteLine(indexers2[5]);
 
-            // Now that we have indexers, we can define an array of a particular object.
-            Indexers[] indexed = new Indexers[2];   // So long as an indexer has not been defined, you cannot create this array!
+            
+            Indexers[] indexed = new Indexers[2];   
             indexed[0] = indexers1;
             indexed[1] = indexers2;
             indexed[1].printStatement();    // We can easily access the content of that element.
