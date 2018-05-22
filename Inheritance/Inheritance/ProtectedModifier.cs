@@ -32,7 +32,7 @@ namespace Inheritance
 
         public void Action2()   // What if I define a method that uses a private field. Would it be inherited without a problem?
         {
-            Console.WriteLine("This is a public method that uses the private field \"Width\"" + Width);
+            Console.WriteLine("This is a public method that uses the private field \"Width\" " + Width);
         }
 
     }
