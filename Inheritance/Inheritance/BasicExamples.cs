@@ -24,6 +24,7 @@ namespace Inheritance
         {
             return Width * Height / 2;
         }
+
         // Display a triangle's style.
         public void ShowStyle()
         {

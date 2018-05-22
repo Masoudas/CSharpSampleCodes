@@ -6,6 +6,7 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
+            // Basic inheritance example.
             Console.WriteLine("Hello World!");
             Triange triange = new Triange();
             triange.Height = 10;
@@ -14,6 +15,9 @@ namespace Inheritance
             triange.ShowDim();
             triange.ShowStyle();
             Console.WriteLine("Triangle area is " + triange.Area());
+
+            // Using protected in class hierarchy.
+            Trianglea trianglea = new Trianglea(5, 10);
 
             Console.ReadLine();
         }
