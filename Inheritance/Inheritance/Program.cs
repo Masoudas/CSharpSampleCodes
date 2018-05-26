@@ -27,6 +27,25 @@ namespace Inheritance
             // Name hiding.
             B b = new B(10);
 
+            // Reference to the base class.
+            TwoDShapeb twoDShapeb = new TwoDShapeb();
+            Triangle triangle1 = new Triangle("A", 1, 1);
+            twoDShapeb = triangle1;    // The reference of the base class is assigned the reference of the derived class. We would then have access only to the base class parameters of the derived class.
+            Console.WriteLine(twoDShapeb.Height + " " + twoDShapeb.Width);
+
+
+            // Refernece to base class in constructors
+            AnotherTriangle t1 = new AnotherTriangle("right", 8.0, 12.0);
+            // Make a copy of t1.
+            AnotherTriangle t2 = new AnotherTriangle(t1);
+            Console.WriteLine("Info for t1: ");
+            Console.WriteLine("Area is " + t1.Area());
+            Console.WriteLine();
+            Console.WriteLine("Info for t2: ");
+            Console.WriteLine("Area is " + t2.Area());
+
+
+
 
 
             Console.ReadLine();
