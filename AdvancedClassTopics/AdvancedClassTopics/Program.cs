@@ -1,5 +1,5 @@
 ﻿using System;
-// Trying to push this whole thing to the Git server for good.
+// Trying to push this whole thing to the Git server for good!
 namespace AdvancedClassTopics
 {
     class Program
