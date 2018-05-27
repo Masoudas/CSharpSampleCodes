@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace VirtualAndAbstractAndSealedModifiers
-{ //Ey.
+{ //Ey.delee ghafel
     class Program
     {
         static void Main(string[] args)
