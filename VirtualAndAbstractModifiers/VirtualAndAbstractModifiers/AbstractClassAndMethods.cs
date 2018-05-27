@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VirtualAndAbstractModifiers
+namespace VirtualAndAbstractAndSealedModifiers
 {
     /* A class that contains one or more abstract methods must also be declared as abstract by
        preceding its class declaration with the abstract specifier. Since an abstract class does not
@@ -13,10 +13,14 @@ namespace VirtualAndAbstractModifiers
     /* Here's the wonderful thing about abstract classes. There cannot be an instance of such classes. However, a reference of their type can be defined.
        Hence, when TwoDShape is defined as the base abstract class, you cannot have an new operator to create an instance of it, but you can define
        a reference of its type.*/
+
+    /* As in the case of virtual methods, when abstract methods are overridden, the last overridden method is called via the reference.*/
+
     abstract class AbstractTwoDShape
     {
         double pri_width;
         double pri_height;
+
         // A default constructor.
         public AbstractTwoDShape()
         {

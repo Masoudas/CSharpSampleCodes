@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VirtualAndAbstractModifiers
+namespace VirtualAndAbstractAndSealedModifiers
 {
     // NEVER EVER USE VIRTUAL METHODS WITHIN THE CONSTRUCTOR, ESPECIALLY IN THE CASE OF INHERITANCE. WHY?
     // BECAUSE THE INHERITED METHOD WILL CALL THE VIRTUAL METHOD OF THE CURRENT CLASS FOR THE CONSTRUCTOR OF THE BASE CLASS

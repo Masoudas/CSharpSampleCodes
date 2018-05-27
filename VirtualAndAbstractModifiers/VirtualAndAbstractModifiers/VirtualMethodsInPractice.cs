@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VirtualAndAbstractModifiers
+namespace VirtualAndAbstractAndSealedModifiers
 {
     class TwoDShape
     {

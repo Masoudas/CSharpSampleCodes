@@ -1,7 +1,7 @@
 ﻿using System;
 
-namespace VirtualAndAbstractModifiers
-{
+namespace VirtualAndAbstractAndSealedModifiers
+{ //Ey.
     class Program
     {
         static void Main(string[] args)
@@ -54,10 +54,16 @@ namespace VirtualAndAbstractModifiers
             for (int i = 0; i < abstractshapes.Length; i++)
             {
                 Console.WriteLine("object is " + abstractshapes[i].name);
-                Console.WriteLine("Area is " + abstractshapes[i].Area());
+                Console.WriteLine("Area is " + abstractshapes[i].Area());   // The same story again, meaning the last definition of Area for objects is grabbed!
                 Console.WriteLine();
             }
 
+            // Object is the universal type, hence it can hold any class, though it is rarely used!
+            object obj = new object[]{ 1, "1", 101d, abstractshapes[0], shapes[2]};
+
+            // Boxing and Unboxing
+            int x = 10;
+            Console.WriteLine(BoxAndUnBox.Sqrt(x));    // A boxing is performed here!
 
             Console.ReadKey();
         }
