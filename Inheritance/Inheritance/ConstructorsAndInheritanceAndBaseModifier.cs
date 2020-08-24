@@ -28,6 +28,9 @@ namespace Inheritance
         }
     }
 
+    /**
+    Because the base class has only a default constructor, it's implicitly called in each constructor here!
+    */
     class Triangle : TwoDShapeb
     {
         // The constructor of this class constructs every single of the sub-class and super class.

@@ -30,12 +30,12 @@ namespace FirstProgram
     {
         int x = 123121212;
         decimal y = 10.58034343480933800M;    // The M must be put at the end to indicate that this literal is a decimal, because decimals are by default doubles!
-        long z;
-        short w;
+        long z = 1L;
+        short w = 10;
 
         public SecondExample()
         {
-            // x = (int)z;  // Smaller to larger always requires type casting.
+            // x = (int)z;  // Larger to smaller always requires type casting.
             z = x;  // The smaller value can always be assigned to the larger one
             w = (short) x;  // Type casting has occured. The least significant bits are exactly copied, result may be confusing.
             Console.WriteLine("x is " + x + " and y is "+ y);
